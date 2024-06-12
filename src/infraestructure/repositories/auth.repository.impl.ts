@@ -2,7 +2,7 @@ import { AuthDataSource, AuthRepository, RegisterUserDto, User } from "../../dom
 
 export class AuthRepositoryImpl implements AuthRepository {
     constructor (
-        private readonly authDataSource: AuthDataSource
+        private readonly authDataSource: AuthDataSource,
     ){}
 
     register(registerUserDto: RegisterUserDto): Promise<User> {
